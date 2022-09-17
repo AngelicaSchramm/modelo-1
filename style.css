@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fundo-principal{
+    background: linear-gradient(to right, #32373bd5,#32373bc0 ), url(img/WhatsApp\ Image\ 2022-09-16\ at\ 23.50.56.jpeg) ;
+    background-size: cover;
+    width: 100vw;
+}
+
+header{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+header .container{
+    justify-content: flex-start;
+}
+
+.logo{
+    width: 15rem;
+    
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.destaque{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.destaque .container{
+    justify-content: flex-start;
+}
+
+.destaque-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.destaque-text h2{
+    font-size: 5.2rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #fff;
+}
+
+.destaque-text p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.whatsapp-button{
+    display: inline;
+    background-color: #A69658;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.especialidades{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #A69658;
+}
+
+.especialidades .card-especialidade{
+    width: 33%;
+    padding: 4rem 2rem;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.especialidades .card-especialidade.dark{
+    background-color: #94864ddb;
+}
+
+.card-especialidade h3{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.quem-somos{
+    width: 100vw;
+    background-color: #F8F7FF ;
+    color: #1d2023;
+    padding: 6rem 0;
+}
+
+.quem-title{
+    width: 35%;
+}
+
+.quem-text{
+    width: 60%;
+}
+
+.quem-text p{
+    text-justify: justify;
+    font-size: 1.6rem;
+}
+
+.vantagens{
+    width:100vw;
+    background-color: #32373B;
+    padding: 6rem 0;
+    color: #fff;
+}
+
+.vantagens-divisao{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.vantagens-divisao .whatsapp{
+    align-self: flex-start;
+}
+
+.vantagem-card{
+    background-color: #1c1e20da;
+    width: 90%;
+    padding: 1rem;
+    font-size: 1.4rem;
+
+}
+
+.onde-encontrar{
+    width: 100vw;
+    background: linear-gradient( #32373bc0, #32373bc0), url(img/hands.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+.onde-encontrar .container{
+    justify-content: flex-start;
+}
+
+.onde-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.onde-text p{
+    font-size: 1.6rem;
+}
+
+footer{
+    width: 100vw;
+    background-color: #32373B;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+footer .logo{
+    text-align:center;
+    font-size: 1.4rem;
+}
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .destaque-text{
+        width: 100%;
+    }
+    .destaque-text h2{
+       font-size: 4.5rem;
+    }
+    .especialidades{
+        flex-wrap: wrap;
+    }
+    .especialidades .card-especialidade{
+        width: 100%;
+    }
+    .quem-title{
+        width: 100%;
+        text-align: center;
+    }
+    .quem-text{
+        width:100%;
+        text-align: justify;
+    }
+    .vantagens-divisao{
+        width:100%;
+    }
+    .vantagens-divisao:first-child{
+        text-align: center;
+    }
+    .vantagens-divisao .whatsapp{
+        margin: 2rem 0;
+        align-self: center;
+    }
+    .onde-text{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    .destaque-text h2{
+        font-size: 4rem;
+    }
+}
